@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero To Hero Movie</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h2>CASE STUDY</h2>
+    <p>
+      Đề bài: Thực hiện chương trình cho phép người dùng nhập tên phim, giá vé
+      người lớn, giá vé trẻ em, số vé người lớn, số vé trẻ em đã bán và tỉ lệ
+      phần trăm của tổng số tiền quyên góp cho từ thiện.
+    </p>
+    <div class="movie__content">
+      <form action="">
+        <div class="movie__form">
+          <label for="">Movie Input</label>
+          <div class="movie__input">
+            <input type="text" id="name" placeholder="Nhập tên phim" />
+            <input type="number" id="adult" placeholder="Giá vé người lớn" />
+            <input type="number" id="adult__quantity" placeholder="Số vé người lớn đã bán" />
+            <input type="number" id="child" placeholder="Giá vé trẻ em" />
+            <input type="number" id="child__quantity" placeholder="Số vé trẻ em đã bán" />
+            <input type="number" id="charity" placeholder="% làm từ thiện" />
+            <button class="tinhTien" type="button" onclick="tinhTien()">Tính </button> 
+            <button type="button" onclick="location. reload()">Reset</button>
+          </div>
+          
+        </div>
+      </form>
+
+      <div class="out__put">
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+        <p id="result5"></p>
+        <p id="result6"></p>
+        <p id="result7"></p>
+      </div>
+
+      
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
