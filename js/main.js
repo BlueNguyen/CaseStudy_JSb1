@@ -14,17 +14,19 @@ function tinhTien() {
   let tienTuThien = (tongDoanhThu * tuThien) / 100;
   let conLai = tongDoanhThu - tienTuThien;
 
-  const VND = new Intl.NumberFormat("vi-VN", {
-    style: "currency",
-    currency: "VND",
-  });
+  tongDoanhThu=tongDoanhThu.toLocaleString('en-US');
+  tienTuThien = tienTuThien.toLocaleString("en-US");
+  tienConLai = conLai.toLocaleString("en-US");
 
-  tienConLai = VND.format(conLai);
-  tienTuThien = VND.format(tienTuThien);
-  tongDoanhThu = VND.format(tongDoanhThu);
 
-  tienConLaiconLai = tienConLai.toLocaleString();
+//   const VND = new Intl.NumberFormat("vi-VN", {
+//     style: "currency",
+//     currency: "VND",
+//   });
 
+//   tienConLai = VND.format(conLai);
+//   tienTuThien = VND.format(tienTuThien);
+//   tongDoanhThu = VND.format(tongDoanhThu);
 
   document.getElementById("result1").innerHTML =
     "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*";
@@ -35,7 +37,7 @@ function tinhTien() {
   document.getElementById("result4").innerHTML =
     "Doanh thu: " +
     ".........................................................." +
-    tongDoanhThu;
+    tongDoanhThu +"đ";
   document.getElementById("result5").innerHTML =
     "Trích phần trăm từ thiện: " +
     "...................................." +
@@ -44,9 +46,9 @@ function tinhTien() {
   document.getElementById("result6").innerHTML =
     "Tổng tiền trích từ thiện: " +
     "......................................" +
-    tienTuThien;
+    tienTuThien +"đ";
   document.getElementById("result7").innerHTML =
     "Tổng thu được sau khi trừ: " +
     ".................................." +
-    tienConLai;
+    tienConLai +"đ";
 }
