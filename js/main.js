@@ -55,4 +55,6 @@ function tinhTien() {
     ".................................." +
     tienConLai +
     "đ";
+  
+    document.getElementById("result").className="out__put";
 }
